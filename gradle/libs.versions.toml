@@ -8,6 +8,10 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.4"
 activityCompose = "1.9.1"
 composeBom = "2023.08.00"
+retrofitVer = "2.11.0"
+okhttpVer = "4.12.0"
+koinVer = "3.5.6"
+glideVer = "4.14.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,6 +28,17 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVer"}
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitVer"}
+
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttpVer" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttpVer" }
+
+koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinVer"}
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinVer"}
+
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVer" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

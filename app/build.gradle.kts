@@ -51,6 +51,19 @@ android {
 
 dependencies {
 
+    //network
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+
+    //DI
+    implementation(libs.koin.compose)
+    implementation(libs.koin.android)
+
+    //Work with URI of images
+    implementation(libs.glide)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
